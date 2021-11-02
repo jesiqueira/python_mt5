@@ -3,7 +3,7 @@ from datetime import datetime
 import yfinance as yf
 import pandas as pd
 import MetaTrader5 as mt5
-#^BVSP
+# ^BVSP
 # data = yf.download("SPY", start="2020-09-01", end="2021-10-26")
 
 # real = talib.CDLMORNINGSTAR(data['Open'], data['High'], data['Low'], data['Close'])

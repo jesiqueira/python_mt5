@@ -1,0 +1,10 @@
+1 - Acessar o site https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib e baixar a TA_LIB referente a versão
+do python instalada no seu computador.
+2 - Eu copie o Arquivo para uma pasta que chamei de TA_LIB para deixar fácil de instalar e caso precise eu
+tenho ela fácil para instalar.
+3 - agora é só instalar com o comando: pip install "e o nome do arquivo que baixou".whl
+
+para verificar se está instalada é só executar:
+pip list
+
+Link de referencia: https://www.youtube.com/watch?v=RBSJsJxIwEA
