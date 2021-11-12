@@ -11,7 +11,7 @@ print(f"MT5 version: {mt5.__version__}")
 print(f"Empresa: {mt5.__author__}")
 
 # copias as 200 barras da atual até a 200 em timeframe_m5
-rates = mt5.copy_rates_from_pos('EURUSD', mt5.TIMEFRAME_M5, 0, 200)
+rates = mt5.copy_rates_from_pos('EURUSD', mt5.TIMEFRAME_M5, 0, 500)
 
 # fechar conexão
 mt5.shutdown()
