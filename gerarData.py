@@ -11,7 +11,9 @@ print(f"MT5 version: {mt5.__version__}")
 print(f"Empresa: {mt5.__author__}")
 
 # copias as 200 barras da atual até a 200 em timeframe_m5
-rates = mt5.copy_rates_from_pos('EURUSD', mt5.TIMEFRAME_M5, 0, 500)
+# rates = mt5.copy_rates_from_pos('EURUSD', mt5.TIMEFRAME_M5, 0, 500)
+# copias as 500 barras  em timeframe_m1
+rates = mt5.copy_rates_from_pos('EURUSD', mt5.TIMEFRAME_M1, 0, 500)
 
 # fechar conexão
 mt5.shutdown()
@@ -26,6 +28,7 @@ df['data'] = pd.to_datetime(df['time'], unit='s')
 df['M9'] = ta.SMA(df['close'], timeperiod=9)
 df['M20'] = ta.SMA(df['close'], timeperiod=20)
 df['M200'] = ta.SMA(df['close'], timeperiod=200)
+df['ADX'] = ta.ADX(df['high'], df['low'], df['close'], timeperiod=14)
 
-df.to_csv('data/EURUSD_M5.csv')
+df.to_csv('data/EURUSD_M1.csv')
 
